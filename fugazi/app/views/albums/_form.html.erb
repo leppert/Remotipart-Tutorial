@@ -1,0 +1,15 @@
+<%= form_for @album, :html => { :multipart => true }, :remote => true do |f| %>
+  <%= f.error_messages %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :cover %><br />
+  	<%= f.file_field :cover %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,3 @@
+<%= remotipart_response do %>
+$("form").replaceWith("<p>Success!</p><p><%= @album.title %></p><%= escape_javascript(image_tag @album.cover.url) %>");
+<% end %>
